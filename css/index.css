@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Baloo 2', cursive;
+}
+/* temporary */
+#OurMissions p,#ContactUs p{
+    text-align: center;
+}
+/* temporary */
+h2{
+    text-align: center;
+    padding:20px;
+    font-size: 2.25rem;  
+}
+p{
+    padding: 20px;
+}
+
+#logo{
+    height: 30px;
+    clip-path: circle(31.5% at 50% 50%);
+    padding:0px 12px;
+}
+
+#Home{
+    margin:8vh 0 0 0;
+    height: 92vh;
+    display: flex;
+    /* background-color: #fff7f7; */
+    /* background: url(../img/background1.jpg) no-repeat center center/cover; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+}
+#Home img{
+    height: 81%;
+    padding: 0 50px 0 0;
+}
+#Home p,#OurMissions p,h3{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* Navbar */
+#navbar{
+    position: fixed;
+    height: 8vh;
+    color:black;
+    /* background-color: black; */
+    
+    font-size: 1.3rem;
+    width: 100%;
+    top:0;
+    z-index: 5;
+    justify-content: center;
+}
+#navbar::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--navBack,black);
+    transition: all 0.5s ease;
+    opacity:0.6;
+    z-index: -1;
+}
+#NavList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+#NavList li{
+    list-style-type: none;
+    
+}
+#NavList li a{
+    text-decoration: none;
+    color:var(--navColor,white);
+    padding: 4px 15px;
+    margin:0px 15px;
+}
+#NavList li a:hover{
+    /* background-color: #dc6b6b; */
+    background-color: var(--hoverBack,black);
+    color:var(--hoverColor,white);
+    border-radius: 4px;
+}
+/* Our Mission */
+#OurMissions{
+    /* background-color: rgba(238, 242, 255, 1); */
+    display: flex;
+    background-color: #f7f9ff;
+    /* padding:20px 100px; */
+    padding: 20px 12.5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#OurMissions img{
+    height: 400px;
+    padding: 20px;
+}
+.missionContent{
+    padding:30px;
+}
+/* RoadMap */
+#RoadMap{
+    background-color: #f0ecff;
+    /* background-color: rgba(238, 242, 255, 1); */
+}
+.contentPlusPhoto img,.phasesOfRegistration img{
+    padding: 30px;
+    height: 200px;   
+}
+
+.phasesOfRegistration{
+    display:flex;
+    box-shadow: 2px 2px 8px;
+    margin: 55px 0px;
+    width: 60%;
+    border-radius: 5px;
+    position: relative;
+}
+.phasesOfRegistration>span{
+    position: absolute;
+    content:'';
+    width: 0px;
+    border-left:2px solid black;
+    background-color: black;
+    height: 100%;
+    top:0px;
+    left: -16.7%;
+}
+.phasesOfRegistration>span::before,.phasesOfRegistration>span::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border:2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #f0ecff;
+}
+.phasesOfRegistration>span::before{
+    top: -5%;
+    left:-13px;
+}
+.phasesOfRegistration>span::after{
+    top:95%;
+    left:-13px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0px 50px;
+}
+.Timeline{
+    position: relative;
+}
+.Timeline::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 96%;
+    border-left: 2px dashed black;
+    top: 2%;
+    left: 10%;
+}
+.time span{
+    text-align: right;
+}
+.time span:nth-child(1){
+    position: absolute;
+    top:-5%;
+    left: -28%;
+}
+.time span:nth-child(2){
+    position: absolute;
+    top:95%;
+    left: -28%;
+}
+/* Judging Criteria */
+#JudgingCriteria{
+    background-color:#fff9e9;
+    padding: 20px 12.5%;
+}
+/* Incentives and Perks */
+#incentivesAndPerks{
+    background-color: #f2f2f2;
+}
+/* Contact Us */
+#ContactUs{
+    color:white;
+    background-color: rgb(34,38,53);
+}
+#ContactUsDiv{
+    align-items: flex-start;
+}
+#ContactUs .columnFlexContainer{
+    text-align: center;
+}
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.columnFlexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentPlusPhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    /* background-color: #dc6b6b; */
+    background-color: #f2f2f2;
+    /* color:#f2f2f2; */
+    height: 29px;
+    width: 101px;
+    border: 1px solid white;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    /* background-color:#dea9a9; */
+    background-color: white;
+}
+
+footer{
+    background-color: black;
+    color:white;
+}
+/* Apply To all */
+
+/* Utility Classes */
+.reverse{
+    flex-direction: row-reverse;
+}
